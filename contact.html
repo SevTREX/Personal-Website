@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="con">
+            <div class="burger" id="burger-cta">
+                <div class="bar"></div>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="#second-sect">About Me</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="email-sect">
+        <div class="email-con">
+            <div class="name">
+                <label class="label">Name:</label>
+                <input class="input-name" type="text" placeholder="Name" name="Name" id="input-name-cta">
+            </div>
+            <div class="top-email">
+                <label class="label">Email:</label><br>
+                <input type="text" placeholder="Email" name="Email" id="input-email-cta" class="input-email">
+            </div>
+            <div class="bottom-email">
+                <label class="label">Message:</label><br>
+                <textarea class="input-msg" name="Message" placeholder="Message" id="input-msg-cta" cols="30" rows="10"></textarea>
+            </div>
+            <button class="send-email-btn" id="send-email-btn-cta">Send</button>
+        </div>
+    </section>
+
+    <section class="ohter-sect">
+        <div class="other-con">
+            <div class="con">
+                <label class="label">Facebook</label>
+                <a href="https://www.facebook.com/kurlsteve.estrellanes.7" target="_blank">Visit</a>
+                
+            </div>
+            <div class="con">
+                <label class="label">Instagram</label>
+                <a href="https://www.instagram.com/upsidetrex/" target="_blank">Visit</a>
+            </div>
+            <div class="con">
+                <label class="label">Tiktok</label>
+                <a href="https://www.tiktok.com/@kio_ak47?is_from_webapp=1&sender_device=pc" target="_blank">Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <nav class="overlay-menu" id="overlay-menu-cta">
+        <ul class="menu-list">
+            <div class="close-con">
+                <i class="fa fa-times" id="close-menu"></i>
+            </div>
+            <!-- <img src="" alt="close" class="close-sidebar"> -->
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">About Me</a></li>
+            <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="js/contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
