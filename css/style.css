@@ -1,153 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --col1-bg: #F3EFE0;
-    --col2-con: #434242;
-    --col3-nav: #222222;
-    --col4: #22A39F;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-html {
-    background-color: var(--col1-bg);
-    height: 100%;
-    width: 100%;
-}
-
-* {
-    font-family: "Poppins";
-    scroll-behavior: smooth;
-    transition: all .3s;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--col2-con);
-    align-items: center;
-}
-.burger .bar{
-    width: 30px;
-    height: 5px;
-    background-color: var(--col1-bg);
-    margin-top: 5px;
-    transition: all .2s;
-    border-radius: 1.8px;
-}
-.burger:hover .bar {
-    background-color: var(--col4);
-}
-.burger {
-    margin-top: 7px;
-    cursor: pointer;
-    display: none;
-    width: 30px;
-    margin: auto;
-}
-.con {
-    width: 400px;
-    display: flex;
-}
-.navbar .menu-list {
-    display: flex;
-    justify-content: space-around;
-}
-.navbar .menu-list li {
-    list-style-type: none;
-    margin: 0 25px 0 25px;
-}
-.navbar .menu-list li a:hover { 
-    color: var(--col4);
-}
-.navbar .menu-list li a{
-    text-decoration: none;
-    color: white;
-    transition: ease-in-out .2s;
-}
-
-.overlay-menu {
-    position: fixed;
-    z-index: 9;
-    height: 100vh;
-    width: 100vw;
-    background-color: #434242;
-    top: -100vh;
-    text-align: center;
-    transition: all 1s;
-}
-.overlay-menu .menu-list .menu-item a {
-    color: var(--col1-bg);
-    text-decoration: none;
-    font-size: 4vw;
-    height: 30px;
-    transition: all .2s;
-}
-.overlay-menu .menu-list .menu-item a:hover {
-    color: var(--col4);
-}
-.overlay-menu .menu-list {
-    padding: 0;
-    height: 100%;
-    display: grid;
-    justify-content: space-around;
-    margin: 0;
-}
-.overlay-menu .menu-list .menu-item {
-    list-style-type: none;
-    margin: 0;
-    display: grid;
-    justify-content: space-around;
-}
-#close-menu {
-    font-size: 30px;
-    color: var(--col1-bg);
-    cursor: pointer;
-    margin: 50px;
-    transition: all 1s;
-    height: 30px;
-    width: 30px;
-}
-/* #close-sidebar::before {
-    transform: rotate(90deg);
-} */
-.close-con {
-    display: grid;
-    justify-content: space-around;
-}
-#close-menu:hover {
-    color: var(--col4);
-    transform: rotate(90deg);
-}
-.second-sect {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 50px 0 50px 0;
-}
-@media screen and (max-width:520px) {
-    .navbar .con .menu-list {
-        display: none;
-    }
-    .navbar .con .burger {
-        display: block;
-        margin: 0;
-    }
-    .navbar {
-        height: 50px;
-    }
-    .con {
-        display: block;
-        align-items: center;
-        width: 30px;
-        position: absolute;
-        margin: auto;
-    }
-    .con .bar {
-        margin: 0;
-    }
-}
 
 .sect {
     width: 100%;
@@ -182,9 +32,8 @@ html {
     border-bottom-right-radius: 30px;
     text-align: center;
     position: relative;
-    top: -200px;
     z-index: -1;
-    transition: all .2s;
+    display: none;
 }
 .bottom-con-one p {
     margin: 0;
@@ -192,8 +41,32 @@ html {
 }
 .bottom-con-one #one-arrow-up-cta {
     font-size: 3vw;
-    transition: all .2s;
+    cursor: pointer;
 }
 .bottom-con-one #one-arrow-up-cta:hover {
+    color: var(--col4);
+}
+
+.bottom-con-one #two-arrow-up-cta {
+    font-size: 3vw;
+    cursor: pointer;
+}
+.bottom-con-one #two-arrow-up-cta:hover {
+    color: var(--col4);
+}
+
+.bottom-con-one #three-arrow-up-cta {
+    font-size: 3vw;
+    cursor: pointer;
+}
+.bottom-con-one #three-arrow-up-cta:hover {
+    color: var(--col4);
+}
+
+.bottom-con-one #four-arrow-up-cta {
+    font-size: 3vw;
+    cursor: pointer;
+}
+.bottom-con-one #four-arrow-up-cta:hover {
     color: var(--col4);
 }
